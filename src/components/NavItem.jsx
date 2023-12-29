@@ -1,6 +1,6 @@
 export function NavItem({ title, onClick, active }) {
   return (
-    <div onClick={onClick} className="flex items-center gap-x-3 group w-fit">
+    <div onClick={onClick} className="flex items-center gap-x-3 group w-fit h-8">
       <hr
         className={
           active
