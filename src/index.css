@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: rgb(148 163 184);
+  background-attachment: fixed;
+  font-family: Montserrat;
+  background-color: #090c1c;
+  background-image: radial-gradient(100% 100% at top, #2f11805d, #090c1c);
+  background-repeat: no-repeat;
+}
