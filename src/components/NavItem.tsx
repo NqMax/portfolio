@@ -1,4 +1,4 @@
-export function NavItem({ title, onClick, active }) {
+export function NavItem({ title, onClick, active }: { title: string; onClick: () => void; active: boolean }) {
   return (
     <div onClick={onClick} className="flex items-center gap-x-3 group w-fit h-8">
       <hr

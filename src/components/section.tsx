@@ -1,4 +1,14 @@
-export function Section({ children, title, number, reference }) {
+export function Section({
+  children,
+  title,
+  number,
+  reference,
+}: {
+  children: React.ReactNode;
+  title: string;
+  number: string;
+  reference: React.RefObject<HTMLElement>;
+}) {
   return (
     <section className="flex flex-col gap-y-4" ref={reference}>
       <div className="flex gap-x-4 items-center">
