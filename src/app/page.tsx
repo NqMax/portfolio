@@ -64,7 +64,7 @@ export default function Home() {
               Aspiring Full Stack Engineer
             </h2>
             <p>
-              I focus on building robust systems and
+              Focused on building robust systems and
               <br /> dynamic web applications.
             </p>
           </div>
