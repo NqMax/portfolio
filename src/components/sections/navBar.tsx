@@ -20,8 +20,8 @@ export function NavBar() {
     };
   });
 
-  function isElementInViewport(ref) {
-    const rect = ref.getBoundingClientRect();
+  function isElementInViewport(ref: HTMLElement | null) {
+    const rect = ref!.getBoundingClientRect();
 
     return (
       rect.top >= 0 &&
