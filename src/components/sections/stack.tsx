@@ -54,13 +54,9 @@ const stackList = [
   },
 ];
 
-export function Stack({
-  stackRef,
-}: {
-  stackRef: React.RefObject<HTMLElement>;
-}) {
+export function Stack() {
   return (
-    <Section number="03" title="My Stack" reference={stackRef} id="stack">
+    <Section number="03" title="My Stack" id="stack">
       <ul className="grid-cols-5 grid justify-items-center gap-y-6 p-4 bg-white/10 shadow backdrop-blur rounded">
         {stackList.map((tech) => (
           <li key={tech.name}>

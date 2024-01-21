@@ -6,13 +6,9 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiTailwindcss, SiExpress } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 
-export function Projects({
-  projectsRef,
-}: {
-  projectsRef: React.RefObject<HTMLElement>;
-}) {
+export function Projects() {
   return (
-    <Section number="04" title="My Projects" reference={projectsRef} id="projects">
+    <Section number="04" title="My Projects" id="projects">
       <div className="flex flex-col gap-y-14 mt-3">
         <Project
           title="Coming Soon!"
