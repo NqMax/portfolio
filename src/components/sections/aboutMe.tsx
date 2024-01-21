@@ -2,7 +2,7 @@ import { Section } from "@/components/section";
 
 export function AboutMe({aboutRef}: {aboutRef: React.RefObject<HTMLElement>}) {
   return (
-    <Section number="01" title="About Me" reference={aboutRef}>
+    <Section number="01" title="About Me" reference={aboutRef} id="about">
       <p>
         My journey into the world of coding began with a fascination for
         <span className="font-bold text-slate-200"> problem-solving</span> and a

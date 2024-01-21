@@ -12,7 +12,7 @@ export function Projects({
   projectsRef: React.RefObject<HTMLElement>;
 }) {
   return (
-    <Section number="04" title="My Projects" reference={projectsRef}>
+    <Section number="04" title="My Projects" reference={projectsRef} id="projects">
       <div className="flex flex-col gap-y-14 mt-3">
         <Project
           title="Coming Soon!"

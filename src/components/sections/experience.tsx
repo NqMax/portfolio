@@ -7,7 +7,7 @@ export function Experience({
   experienceRef: React.RefObject<HTMLElement>;
 }) {
   return (
-    <Section number="02" title="My Experience" reference={experienceRef}>
+    <Section number="02" title="My Experience" reference={experienceRef} id="experience">
       <Experiences />
     </Section>
   );
