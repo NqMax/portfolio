@@ -1,6 +1,14 @@
-export function NavItem({ title, onClick, active }: { title: string; onClick: () => void; active: boolean }) {
+export function NavItem({
+  title,
+  href,
+  active,
+}: {
+  title: string;
+  href: string;
+  active: boolean;
+}) {
   return (
-    <div onClick={onClick} className="flex items-center gap-x-3 group w-fit h-8">
+    <a href={href} className="flex items-center gap-x-3 group w-fit h-8">
       <hr
         className={
           active
@@ -17,6 +25,6 @@ export function NavItem({ title, onClick, active }: { title: string; onClick: ()
       >
         {title}
       </div>
-    </div>
+    </a>
   );
 }
