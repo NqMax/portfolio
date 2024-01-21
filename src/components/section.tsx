@@ -3,16 +3,18 @@ export function Section({
   title,
   number,
   reference,
+  id,
 }: {
   children: React.ReactNode;
   title: string;
   number: string;
   reference: React.RefObject<HTMLElement>;
+  id: string;
 }) {
   return (
-    <section className="flex flex-col gap-y-4" ref={reference}>
+    <section className="flex flex-col gap-y-4 scroll-mt-24" ref={reference} id={id}>
       <div className="flex gap-x-4 items-center">
-        <h3 className="text-lg font-bold text-slate-200">
+        <h3 className="font-bold text-slate-200">
           <span className="text-secondary mr-2">{number}.</span>
           {title}
         </h3>
