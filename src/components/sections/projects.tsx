@@ -55,6 +55,20 @@ export function Projects() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cumque
           iure, maiores repudiandae voluptate alias reprehenderit cupiditate.
         </Project>
+        <Project
+          title="Coming Soon!"
+          technologies={[
+            {
+              name: "JavaScript",
+              icon: <IoLogoJavascript className="text-yellow-500" />,
+            },
+            { name: "CSS", icon: <FaCss3Alt className="text-blue-800" /> },
+            { name: "HTML", icon: <FaHtml5 className="text-red-500" /> },
+          ]}
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cumque
+          iure, maiores repudiandae voluptate alias reprehenderit cupiditate.
+        </Project>
       </div>
     </Section>
   );

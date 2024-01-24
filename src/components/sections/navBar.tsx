@@ -7,46 +7,69 @@ export function NavBar() {
   const [lastActiveSection, setLastActiveSection] = useState(1);
 
   useEffect(() => {
-    window.onscroll = () => {
-      setLastActiveSection(
-        isElementInViewport(document.querySelector("#about"))
-          ? 1
-          : isElementInViewport(document.querySelector("#experience"))
-          ? 2
-          : isElementInViewport(document.querySelector("#stack"))
-          ? 3
-          : 4
-      );
-    };
-  });
-
-  function isElementInViewport(ref: HTMLElement | null) {
-    const rect = ref!.getBoundingClientRect();
-
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const section = entry.target.id;
+            if (section === "about") {
+              setLastActiveSection(1);
+            } else if (section === "experience") {
+              setLastActiveSection(2);
+            } else if (section === "stack") {
+              setLastActiveSection(3);
+            } else {
+              setLastActiveSection(4);
+            }
+          }
+        });
+      },
+      {
+        rootMargin: "-96px 0% -80% 0%",
+        threshold: 0,
+      }
     );
-  }
+
+    document
+      .querySelectorAll("#about, #experience, #stack, #projects")
+      .forEach((section) => {
+        observer.observe(section);
+      });
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <>
       <nav>
         <ul className="flex flex-col gap-y-6">
           <li>
-            <NavItem title="ABOUT" active={lastActiveSection === 1 ? true : false} href="#about" />
+            <NavItem
+              title="ABOUT"
+              active={lastActiveSection === 1}
+              href="#about"
+            />
           </li>
           <li>
-            <NavItem title="EXPERIENCE" active={lastActiveSection === 2 ? true : false} href="#experience" />
+            <NavItem
+              title="EXPERIENCE"
+              active={lastActiveSection === 2}
+              href="#experience"
+            />
           </li>
           <li>
-            <NavItem title="STACK" active={lastActiveSection === 3 ? true : false} href="#stack" />
+            <NavItem
+              title="STACK"
+              active={lastActiveSection === 3}
+              href="#stack"
+            />
           </li>
           <li>
-            <NavItem title="PROJECTS" active={lastActiveSection === 4 ? true : false} href="#projects" />
+            <NavItem
+              title="PROJECTS"
+              active={lastActiveSection === 4}
+              href="#projects"
+            />
           </li>
         </ul>
       </nav>
