@@ -6,6 +6,29 @@
   scroll-behavior: smooth;
 }
 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    --secondary: 270 100% 70%;
+
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+
+    --border: 0 0% 89.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
 body {
   background-attachment: fixed;
   background-color: #090c1c;

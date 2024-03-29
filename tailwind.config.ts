@@ -8,7 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: { secondary: "#b264ff" },
+      colors: {
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        secondary: "hsl(var(--secondary))",
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        border: "hsl(var(--border))",
+      },
     },
   },
   plugins: [],
