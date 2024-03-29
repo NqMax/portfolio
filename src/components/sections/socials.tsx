@@ -1,18 +1,24 @@
 import { FaGithub } from "react-icons/fa";
 
 export function Socials() {
+  const socials = [
+    {
+      name: "GitHub",
+      url: "https://github.com/NqMax",
+      icon: FaGithub,
+    },
+  ];
+
   return (
-    <ul className="flex items-end gap-x-4">
-      <li>
-        <a
-          href="https://github.com/NqMax"
-          aria-label="Author's GitHub profile"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaGithub className="w-6 h-6 transition-all hover:text-slate-200" />
-        </a>
-      </li>
+    <ul className="flex gap-x-4" aria-label="Social media">
+      {socials.map((social) => (
+        <li key={social.name}>
+          <a href={social.url} target="_blank" rel="noreferrer">
+            <span className="sr-only">{social.name}</span>
+            <social.icon className="hover:text-accent h-6 w-6 transition-colors" />
+          </a>
+        </li>
+      ))}
     </ul>
   );
 }
