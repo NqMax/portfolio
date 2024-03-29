@@ -9,13 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        primary: "hsl(var(--primary))",
+        accent: "hsl(var(--accent))",
         secondary: "hsl(var(--secondary))",
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
+
         border: "hsl(var(--border))",
       },
     },
