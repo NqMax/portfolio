@@ -10,13 +10,11 @@ export function Section({
   id: string;
 }) {
   return (
-    <section className="flex flex-col gap-y-4 scroll-mt-24" id={id}>
-      <div className="flex gap-x-4 items-center">
-        <h3 className="font-bold text-slate-200">
-          <span className="text-secondary mr-2">{number}.</span>
-          {title}
-        </h3>
-        <hr className="grow border-slate-400" />
+    <section className="flex scroll-mt-24 flex-col gap-y-4" id={id}>
+      <div className="flex items-center font-bold">
+        <span className="mr-2 text-secondary">{number}.</span>
+        <h3 className="text-accent mr-4">{title}</h3>
+        <hr className="grow" />
       </div>
       {children}
     </section>
