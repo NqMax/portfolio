@@ -27,7 +27,7 @@ export function NavBar() {
       {
         rootMargin: "-96px 0% -80% 0%",
         threshold: 0,
-      }
+      },
     );
 
     document
@@ -40,39 +40,37 @@ export function NavBar() {
   }, []);
 
   return (
-    <>
-      <nav>
-        <ul className="flex flex-col gap-y-6">
-          <li>
-            <NavItem
-              title="ABOUT"
-              active={lastActiveSection === 1}
-              href="#about"
-            />
-          </li>
-          <li>
-            <NavItem
-              title="EXPERIENCE"
-              active={lastActiveSection === 2}
-              href="#experience"
-            />
-          </li>
-          <li>
-            <NavItem
-              title="STACK"
-              active={lastActiveSection === 3}
-              href="#stack"
-            />
-          </li>
-          <li>
-            <NavItem
-              title="PROJECTS"
-              active={lastActiveSection === 4}
-              href="#projects"
-            />
-          </li>
-        </ul>
-      </nav>
-    </>
+    <nav>
+      <ul className="flex flex-col gap-y-6">
+        <li>
+          <NavItem
+            title="ABOUT"
+            active={lastActiveSection === 1}
+            href="#about"
+          />
+        </li>
+        <li>
+          <NavItem
+            title="EXPERIENCE"
+            active={lastActiveSection === 2}
+            href="#experience"
+          />
+        </li>
+        <li>
+          <NavItem
+            title="STACK"
+            active={lastActiveSection === 3}
+            href="#stack"
+          />
+        </li>
+        <li>
+          <NavItem
+            title="PROJECTS"
+            active={lastActiveSection === 4}
+            href="#projects"
+          />
+        </li>
+      </ul>
+    </nav>
   );
 }
