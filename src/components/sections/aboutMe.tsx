@@ -5,20 +5,21 @@ export function AboutMe() {
     <Section number="01" title="About Me" id="about">
       <p>
         My journey into the world of coding began with a fascination for
-        <span className="font-bold text-slate-200"> problem-solving</span> and a
+        <span className="font-medium text-slate-200"> problem-solving</span> and a
         desire to create impactful solutions through
-        <span className="font-bold text-slate-200"> technology</span>. I thrive
+        <span className="font-medium text-slate-200"> technology</span>. I thrive
         on challenges, constantly exploring new frameworks and languages to
-        expand my skill set. <br />
-        <br />
+        expand my skill set.
+      </p>
+      <p>
         With a solid foundation in
-        <span className="font-bold text-slate-200">
+        <span className="font-medium text-slate-200">
           {" "}
           front-end and back-end development
         </span>
         , I am dedicatedly committed to honing my abilities to craft seamless,
         user-centric experiences and
-        <span className="font-bold text-slate-200">
+        <span className="font-medium text-slate-200">
           {" "}
           robust, scalable applications{" "}
         </span>
