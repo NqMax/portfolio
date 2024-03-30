@@ -10,9 +10,9 @@ import { Projects } from "@/components/sections/projects";
 
 export default function Home() {
   return (
-    <div className="flex mx-auto justify-between min-h-screen container xl:max-w-screen-lg">
+    <div className="container mx-auto flex min-h-screen xl:max-w-screen-lg">
       {/* Left Container (header) */}
-      <header className="flex flex-col w-1/2 justify-between max-h-screen sticky top-0 py-24">
+      <header className="sticky top-0 flex max-h-screen w-1/2 flex-col justify-between py-24">
         <div className="flex flex-col gap-y-14">
           <Intro />
           <NavBar />
@@ -20,7 +20,7 @@ export default function Home() {
         <Socials />
       </header>
       {/* Right Container (main) */}
-      <main className="flex flex-col w-1/2 gap-y-24 py-24">
+      <main className="flex w-1/2 flex-col gap-y-24 py-24">
         <AboutMe />
         <Experience />
         <Stack />
