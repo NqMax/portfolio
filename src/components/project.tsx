@@ -1,27 +1,40 @@
-import { MdArrowOutward } from "react-icons/md";
+import Image from "next/image";
+// Components
 import { TechnologyPill } from "@/components/technologyPill";
+// Icons
+import { MdArrowOutward } from "react-icons/md";
 
 export function Project({
   title,
+  picture,
+  url,
   children,
   technologies,
 }: {
   title: string;
+  picture: string;
+  url: string;
   children: React.ReactNode;
   technologies: { name: string; icon: React.ReactNode }[];
 }) {
   return (
-    <article className="flex gap-x-5 group">
+    <article className="group flex gap-x-4">
       {/* Left Container */}
-      <div className="w-40 h-16 bg-gray-400 rounded border-slate-200/50 border-[1.5px]" />
+      <Image
+        src={picture}
+        alt={`${title} project image`}
+        width={120}
+        height={70}
+        className="h-[70px] w-[120px] shrink-0 rounded border-2 border-accent/10"
+      />
       {/* Right Container */}
-      <div className="flex flex-col gap-y-2 w-full">
-        <div className="flex gap-x-2 text-slate-200 group-hover:text-secondary">
-          <div className="font-bold transition-all">{title}</div>
-          <MdArrowOutward className="self-center group-hover:translate-x-1 text-sm group-hover:-translate-y-1 transition-all" />
-        </div>
+      <div className="flex flex-col gap-y-2">
+        <a href={url} target="_blank" rel="noreferrer noopener" className="flex gap-x-2 text-accent group-hover:text-secondary">
+          <div className="font-medium transition-all">{title}</div>
+          <MdArrowOutward className="mb-[2px] h-4 w-4 self-end transition-all group-hover:-translate-y-1 group-hover:translate-x-1" />
+        </a>
         <div className="text-sm">{children}</div>
-        <ul className="flex flex-wrap gap-x-4 gap-y-4 mt-2">
+        <ul className="mt-2 flex flex-wrap gap-x-2 gap-y-2">
           {technologies.map((technology, index) => (
             <li key={index}>
               <TechnologyPill name={technology.name} icon={technology.icon} />
