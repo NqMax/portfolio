@@ -6,8 +6,8 @@ export function TechnologyPill({
   icon: React.ReactNode;
 }) {
   return (
-    <div className="flex items-center gap-x-2 py-1 px-3 bg-secondary/20 rounded-full">
-      <div className="text-secondary text-xs font-medium">{name}</div>
+    <div className="flex items-center gap-x-2 rounded-full bg-secondary/20 px-3 py-1">
+      <div className="text-xs font-medium text-secondary">{name}</div>
       {icon}
     </div>
   );
