@@ -39,10 +39,10 @@ export function Projects() {
   ];
 
   return (
-    <Section number="04" title="My Projects" id="projects">
-      <ul className="mt-3 flex flex-col gap-y-12">
-        {projects.map((project) => (
-          <li key={project.title}>
+    <Section number="03" title="My Projects" id="projects">
+      <ul className="flex flex-col gap-y-12">
+        {projects.map((project, index) => (
+          <li key={index}>
             <Project
               title={project.title}
               picture={project.picture}
