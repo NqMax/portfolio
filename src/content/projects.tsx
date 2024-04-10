@@ -3,7 +3,7 @@ import * as icons from "@/content/icons";
 export const projects = [
   {
     title: "Poké Search",
-    picture: "/poke-search.png",
+    picture: "/projects/poke-search.png",
     url: "https://poke-search-theta.vercel.app/",
     technologies: [
       { name: "React", icon: icons.ReactIcon },
