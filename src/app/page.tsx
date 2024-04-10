@@ -23,8 +23,8 @@ export default function Home() {
       <main className="flex w-1/2 flex-col gap-y-24 py-24">
         <AboutMe />
         <Experience />
-        <Stack />
         <Projects />
+        <Stack />
         <Footer />
       </main>
     </div>

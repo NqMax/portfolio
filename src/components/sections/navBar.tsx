@@ -16,7 +16,7 @@ export function NavBar() {
               setLastActiveSection(1);
             } else if (section === "experience") {
               setLastActiveSection(2);
-            } else if (section === "stack") {
+            } else if (section === "projects") {
               setLastActiveSection(3);
             } else {
               setLastActiveSection(4);
@@ -58,16 +58,16 @@ export function NavBar() {
         </li>
         <li>
           <NavItem
-            title="STACK"
+            title="PROJECTS"
             active={lastActiveSection === 3}
-            href="#stack"
+            href="#projects"
           />
         </li>
         <li>
           <NavItem
-            title="PROJECTS"
+            title="STACK"
             active={lastActiveSection === 4}
-            href="#projects"
+            href="#stack"
           />
         </li>
       </ul>
