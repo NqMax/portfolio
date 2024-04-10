@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mono: ["var(--font-roboto-mono)"],
+      },
       colors: {
         primary: "hsl(var(--primary))",
         accent: "hsl(var(--accent))",
