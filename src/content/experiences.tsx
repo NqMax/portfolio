@@ -41,6 +41,11 @@ export const experiences = [
       { name: "CSS", icon: icons.CSSIcon },
       { name: "Tailwind", icon: icons.TailwindIcon },
       { name: "React", icon: icons.ReactIcon },
+      { name: "Node.js", icon: icons.NodeIcon },
+      { name: "Express", icon: icons.ExpressIcon },
+      { name: "SQL", icon: icons.SQLIcon },
+      { name: "React Native", icon: icons.ReactIcon },
+      { name: "Expo", icon: icons.ExpoIcon },
     ],
   },
   {
