@@ -14,9 +14,9 @@ export function Experiences() {
   const [currentExperience, setCurrentExperience] = useState(experiences[0]);
 
   return (
-    <div className="flex gap-x-6">
+    <div className="flex flex-col gap-x-6 gap-y-6 sm:flex-row">
       {/* Left Container */}
-      <div className="flex w-[30%] flex-col">
+      <div className="flex flex-col sm:w-[30%]">
         {experiences.map((experience, index) => (
           <button
             key={index}
@@ -32,7 +32,7 @@ export function Experiences() {
         ))}
       </div>
       {/* Right Container */}
-      <div className="flex w-[70%] flex-col">
+      <div className="flex flex-col sm:w-[70%]">
         <h4 className="font-bold text-accent">
           {currentExperience.title}{" "}
           <span className="text-secondary">@ {currentExperience.company}</span>

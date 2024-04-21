@@ -23,7 +23,7 @@ export function Project({
         href={url}
         target="_blank"
         rel="noreferrer noopener"
-        className="flex gap-x-4"
+        className="flex flex-col gap-x-4 gap-y-6 sm:flex-row"
       >
         {/* Left Container */}
         <Image
@@ -31,7 +31,7 @@ export function Project({
           alt={`${title} project image`}
           width={120}
           height={70}
-          className="h-[70px] w-[120px] shrink-0 rounded border-2 border-accent/10"
+          className="lg:h-[70px] lg:w-[120px] w-[200px] h-[115px] shrink-0 rounded border-2 border-accent/10 order-last sm:order-none"
         />
         {/* Right Container */}
         <div className="flex flex-col gap-y-2">

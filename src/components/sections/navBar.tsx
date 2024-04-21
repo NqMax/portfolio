@@ -41,7 +41,7 @@ export function NavBar() {
 
   return (
     <nav>
-      <ul className="flex flex-col gap-y-6">
+      <ul className="lg:flex flex-col gap-y-6 hidden">
         <li>
           <NavItem
             title="ABOUT"
