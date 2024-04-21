@@ -7,6 +7,9 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      padding: '2rem',
+    },
     extend: {
       fontFamily: {
         mono: ["var(--font-roboto-mono)"],
