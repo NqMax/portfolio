@@ -3,7 +3,7 @@ import { Section } from "@/components/section";
 export function AboutMe() {
   return (
     <Section number="01" title="About Me" id="about">
-      <p>
+      <p className="text-pretty">
         My journey into the world of coding began with a fascination for
         <span className="font-medium text-accent"> problem-solving</span> and a
         desire to create impactful solutions through
@@ -11,13 +11,13 @@ export function AboutMe() {
         on challenges, constantly exploring new frameworks and languages to
         expand my skill set.
       </p>
-      <p>
+      <p className="text-pretty">
         With a solid foundation in
         <span className="font-medium text-accent">
           {" "}
           front-end and back-end development
         </span>
-        , I am dedicatedly committed to honing my abilities to craft seamless,
+        , I am committed to honing my abilities to craft seamless,
         user-centric experiences and
         <span className="font-medium text-accent">
           {" "}

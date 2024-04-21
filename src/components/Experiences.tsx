@@ -33,10 +33,10 @@ export function Experiences() {
       </div>
       {/* Right Container */}
       <div className="flex w-[70%] flex-col">
-        <div className="font-bold text-accent">
+        <h4 className="font-bold text-accent">
           {currentExperience.title}{" "}
           <span className="text-secondary">@ {currentExperience.company}</span>
-        </div>
+        </h4>
         <div className="font-mono text-sm">{currentExperience.date}</div>
         <ul className="mt-4 flex flex-col gap-y-4">
           {currentExperience.points.map((point, index) => (

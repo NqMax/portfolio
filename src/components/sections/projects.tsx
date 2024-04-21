@@ -6,7 +6,7 @@ import { projects } from "@/content/projects";
 
 export function Projects() {
   return (
-    <Section number="03" title="My Projects" id="projects">
+    <Section number="03" title="Projects" id="projects">
       <ul className="flex flex-col gap-y-12">
         {projects.map((project, index) => (
           <li key={index}>

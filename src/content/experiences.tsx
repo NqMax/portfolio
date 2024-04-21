@@ -1,4 +1,4 @@
-import * as icons from "@/content/icons";
+import { icons } from "@/content/icons";
 
 export const experiences = [
   {
@@ -14,16 +14,17 @@ export const experiences = [
         , accomplishing in the process the implementation and deployment of both
         front-end and back-end systems using modern technologies, including{" "}
         <span className="font-medium text-accent">
-          JavaScript, CSS, Tailwind, React, SQL, NodeJS and Express.
+          JavaScript, Tailwind CSS, React, SQL, Node.js and Express.
         </span>
       </>,
       <>
-        Responsible for developing mobile applications with high emphasis on{" "}
+        Crafted engaging mobile applications prioritizing{" "}
         <span className="font-medium text-accent">
           user experience and responsive interfaces
         </span>
-        , developing and implementing in the process a mobile version for a CRM
-        and Wallet system for fin-techs using{" "}
+        . Led the development and implementation of a{" "}
+        <span className="font-medium text-accent">mobile version</span> for a
+        CRM and Wallet system tailored for fintech companies using{" "}
         <span className="font-medium text-accent">React Native and Expo</span>.
       </>,
       <>
