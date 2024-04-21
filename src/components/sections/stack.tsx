@@ -28,12 +28,12 @@ const stackList = [
     icon: <FaHtml5 className="h-full w-full text-red-500" />,
   },
   {
-    name: "Node",
+    name: "Node.js",
     icon: <FaNodeJs className="h-full w-full text-green-500" />,
   },
   {
     name: "React",
-    icon: <FaReact className="h-full w-full text-blue-500" />,
+    icon: <FaReact className="h-full w-full text-sky-500" />,
   },
   {
     name: "Next",
@@ -49,14 +49,14 @@ const stackList = [
   },
   {
     name: "Express",
-    icon: <SiExpress className="h-16 w-16 text-yellow-500" />,
+    icon: <SiExpress className="h-full w-full text-yellow-500" />,
   },
 ];
 
 export function Stack() {
   return (
     <Section number="04" title="My Stack" id="stack">
-      <ul className="grid grid-cols-5 justify-items-center gap-y-6 rounded bg-white/10 p-3 shadow backdrop-blur">
+      <ul className="grid grid-cols-[repeat(auto-fit,_minmax(64px,_1fr))] justify-items-center gap-x-6 gap-y-6 rounded bg-white/10 p-3 shadow backdrop-blur sm:grid-cols-5">
         {stackList.map((tech) => (
           <li key={tech.name}>
             <Technology name={tech.name} icon={tech.icon} />
