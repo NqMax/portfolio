@@ -11,7 +11,7 @@ export function AboutMe() {
         on challenges, constantly exploring new frameworks and languages to
         expand my skill set.
       </p>
-      <p className="text-pretty">
+      <p className="text-pretty pt-4 lg:pt-0">
         With a solid foundation in
         <span className="font-medium text-accent">
           {" "}
