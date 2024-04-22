@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="container mx-auto flex flex-col lg:flex-row min-h-screen xl:max-w-screen-lg">
       {/* Left Container (header) */}
-      <header className="lg:sticky top-0 flex max-h-screen lg:w-1/2 flex-col justify-between pt-12 lg:py-24">
+      <header className="lg:sticky top-0 flex max-h-screen lg:w-1/2 flex-col justify-between pt-20 lg:py-24">
         <div className="flex flex-col gap-y-4 lg:gap-y-14">
           <Intro />
           <NavBar />
