@@ -7,6 +7,7 @@ import {
   SiTypescript,
   SiExpo,
   SiExpress,
+  SiMdx,
 } from "react-icons/si";
 import { TbFileTypeSql } from "react-icons/tb";
 
@@ -22,4 +23,5 @@ export const icons = {
   Node: <FaNodeJs color="#8cc84b" className="text-green-500" />,
   Express: <SiExpress className="text-black" />,
   SQL: <TbFileTypeSql color="#f97316" className="text-orange-500" />,
+  MDX: <SiMdx className="text-yellow-500" />,
 };

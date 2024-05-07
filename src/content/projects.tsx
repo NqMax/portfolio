@@ -22,4 +22,24 @@ export const projects = [
     description:
       "Web application that allows users to search for Pokémon through a beautiful interface. Created using the popular PokéAPI restful interface.",
   },
+  {
+    title: "Personal Blog",
+    picture: "/projects/blog.png",
+    url: "https://blog-three-zeta-84.vercel.app/",
+    technologies: [
+      { name: "MDX", icon: icons.MDX },
+      { name: "React", icon: icons.React },
+      {
+        name: "TypeScript",
+        icon: icons.TypeScript,
+      },
+      { name: "Next.js", icon: icons.Next },
+      {
+        name: "Tailwind",
+        icon: icons.Tailwind,
+      },
+    ],
+    description:
+      "Elegant personal blog using Markdown + React (MDX) for content creation. Crafted with Next.js and Tailwind CSS for styling.",
+  },
 ];
