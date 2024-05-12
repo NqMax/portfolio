@@ -25,7 +25,7 @@ export const projects = [
   {
     title: "Personal Blog",
     picture: "/projects/blog.png",
-    url: "https://blog-three-zeta-84.vercel.app/",
+    url: "https://max-blog-ebon.vercel.app/",
     technologies: [
       { name: "MDX", icon: icons.MDX },
       { name: "React", icon: icons.React },
