@@ -3,7 +3,7 @@ import { icons } from "@/content/icons";
 export const experiences = [
   {
     title: "Full Stack Developer Intern",
-    company: "SGI",
+    company: "GSI",
     date: "April 2023 - October 2023",
     points: [
       <>
