@@ -5,7 +5,7 @@ export function Intro() {
       <div className="flex flex-col gap-y-3 tracking-tight text-accent">
         <h1 className="text-4xl font-bold sm:text-5xl">Max Marroquín</h1>
         <h2 className="text-lg font-medium sm:text-xl">
-          Aspiring Full Stack Engineer
+          Full Stack Developer
         </h2>
       </div>
       <p>
