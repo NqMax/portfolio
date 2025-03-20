@@ -85,7 +85,7 @@ const stackList = [
 
 export function Stack() {
   return (
-    <Section number="04" title="My Stack" id="stack">
+    <Section number="04" title="My Stack & Tools" id="stack">
       <ul className="grid grid-cols-[repeat(auto-fit,_minmax(64px,_1fr))] justify-items-center gap-x-6 gap-y-6 rounded bg-white/10 p-3 shadow backdrop-blur sm:grid-cols-5">
         {stackList.map((tech) => (
           <li key={tech.name}>
