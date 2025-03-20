@@ -1,6 +1,6 @@
 // Icons
 import { IoLogoJavascript } from "react-icons/io5";
-import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaPlus } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiNextdotjs,
@@ -24,4 +24,5 @@ export const icons = {
   Express: <SiExpress className="text-black" />,
   SQL: <TbFileTypeSql color="#f97316" className="text-orange-500" />,
   MDX: <SiMdx className="text-yellow-500" />,
+  More: <FaPlus className="text-gray-500" />,
 };

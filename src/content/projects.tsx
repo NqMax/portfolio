@@ -1,6 +1,6 @@
 import { icons } from "@/content/icons";
 
-export const projects = [
+const temp = [
   {
     title: "Poké Search",
     picture: "/projects/poke-search.png",
@@ -21,6 +21,24 @@ export const projects = [
     ],
     description:
       "Web application that allows users to search for Pokémon through a beautiful interface. Created using the popular PokéAPI restful interface.",
+  },
+];
+
+export const projects = [
+  {
+    title: "Repositories",
+    picture: "/projects/repositories.png",
+    url: "https://github.com/NqMax?tab=repositories",
+    technologies: [
+      { name: "React", icon: icons.React },
+      {
+        name: "TypeScript",
+        icon: icons.TypeScript,
+      },
+      { name: "Much more", icon: icons.More },
+    ],
+    description:
+      "A collection of diverse applications and projects showcasing my work in application development.",
   },
   {
     title: "Personal Blog",

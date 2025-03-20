@@ -1,14 +1,24 @@
 import { Section } from "@/components/section";
 // Icons
-import { FaCss3Alt, FaHtml5, FaReact, FaNodeJs } from "react-icons/fa";
+import {
+  FaCss3Alt,
+  FaHtml5,
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaDocker,
+  FaFigma,
+  FaGithub
+} from "react-icons/fa";
 import { PiFileSql } from "react-icons/pi";
+import { DiScrum } from "react-icons/di";
 import {
   SiTailwindcss,
-  SiExpress,
   SiNextdotjs,
   SiTypescript,
   SiJavascript,
 } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 
 const stackList = [
   {
@@ -45,11 +55,31 @@ const stackList = [
   },
   {
     name: "SQL",
-    icon: <PiFileSql className="h-full w-full text-red-500" />,
+    icon: <PiFileSql className="h-full w-full text-yellow-500" />,
   },
   {
-    name: "Express",
-    icon: <SiExpress className="h-full w-full text-yellow-500" />,
+    name: "Git",
+    icon: <FaGitAlt className="h-full w-full text-red-500" />,
+  },
+  {
+    name: "Native",
+    icon: <TbBrandReactNative className="h-full w-full text-purple-500" />,
+  },
+  {
+    name: "Docker",
+    icon: <FaDocker className="h-full w-full text-blue-500" />,
+  },
+  {
+    name: "Figma",
+    icon: <FaFigma className="h-full w-full text-pink-500" />,
+  },
+  {
+    name: "GitHub",
+    icon: <FaGithub className="h-full w-full text-black" />,
+  },
+  {
+    name: "Agile",
+    icon: <DiScrum className="h-full w-full text-blue-500" />,
   },
 ];
 
