@@ -4,7 +4,7 @@ export const experiences = [
   {
     title: "Full Stack Developer",
     company: "GSI",
-    date: "April 2023 - October 2023",
+    date: "April 2025 - Present",
     points: [
       <>
         Responsible for developing{" "}
