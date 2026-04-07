@@ -20,10 +20,11 @@ export function Experiences() {
         {experiences.map((experience, index) => (
           <button
             key={index}
+            type="button"
             onClick={() => setCurrentExperience(experience)}
             className={cn(
-              "border-l-2 border-l-secondary/10 py-2 pl-5 text-start font-mono text-sm font-bold text-secondary",
-              currentExperience.company === experience.company &&
+              "border-l-2 border-l-secondary/10 py-2 pl-5 text-start font-mono text-sm font-bold text-secondary transition-colors hover:bg-secondary/10",
+              currentExperience.id === experience.id &&
                 "border-l-secondary bg-secondary/10",
             )}
           >
@@ -32,7 +33,7 @@ export function Experiences() {
         ))}
       </div>
       {/* Right Container */}
-      <div className="flex flex-col sm:w-[70%]">
+      <div className="flex min-h-[20rem] flex-col sm:w-[70%]">
         <h4 className="font-bold text-accent">
           {currentExperience.title}{" "}
           <span className="text-secondary">@ {currentExperience.company}</span>

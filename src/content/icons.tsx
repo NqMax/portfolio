@@ -1,6 +1,6 @@
 // Icons
 import { IoLogoJavascript } from "react-icons/io5";
-import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaPlus } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaPlus, FaDatabase } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiNextdotjs,
@@ -8,7 +8,9 @@ import {
   SiExpo,
   SiExpress,
   SiMdx,
+  SiVite,
 } from "react-icons/si";
+import { GiArchiveResearch } from "react-icons/gi";
 import { TbFileTypeSql } from "react-icons/tb";
 
 export const icons = {
@@ -25,4 +27,7 @@ export const icons = {
   SQL: <TbFileTypeSql color="#f97316" className="text-orange-500" />,
   MDX: <SiMdx className="text-yellow-500" />,
   More: <FaPlus className="text-gray-500" />,
+  Vite: <SiVite color="#646cff" className="text-indigo-500" />,
+  Databases: <FaDatabase color="#f97316" className="text-orange-500" />,
+  Research: <GiArchiveResearch color="#2563eb" className="text-blue-600" />,
 };

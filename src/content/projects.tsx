@@ -26,7 +26,7 @@ const temp = [
 
 export const projects = [
   {
-    title: "Repositories",
+    title: "Repositories (GitHub)",
     picture: "/projects/repositories.png",
     url: "https://github.com/NqMax?tab=repositories",
     technologies: [

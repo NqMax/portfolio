@@ -1,4 +1,4 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export function Socials() {
   const socials = [
@@ -6,6 +6,11 @@ export function Socials() {
       name: "GitHub",
       url: "https://github.com/NqMax",
       icon: FaGithub,
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/max-marroquin/",
+      icon: FaLinkedin,
     },
   ];
 
