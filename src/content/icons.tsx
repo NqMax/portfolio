@@ -9,9 +9,10 @@ import {
   SiExpress,
   SiMdx,
   SiVite,
+  SiAstro,
 } from "react-icons/si";
 import { GiArchiveResearch } from "react-icons/gi";
-import { TbFileTypeSql } from "react-icons/tb";
+import { TbFileTypeSql, TbSeo } from "react-icons/tb";
 
 export const icons = {
   JavaScript: <IoLogoJavascript color="#facc15" className="text-yellow-400" />,
@@ -30,4 +31,6 @@ export const icons = {
   Vite: <SiVite color="#646cff" className="text-indigo-500" />,
   Databases: <FaDatabase color="#f97316" className="text-orange-500" />,
   Research: <GiArchiveResearch color="#2563eb" className="text-blue-600" />,
+  Astro: <SiAstro color="#ff5a03" className="text-orange-500" />,
+  SEO: <TbSeo color="#10b981" className="text-emerald-500" />,
 };

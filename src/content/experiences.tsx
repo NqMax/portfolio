@@ -2,10 +2,44 @@ import { icons } from "@/content/icons";
 
 export const experiences = [
   {
+    id: "web-developer",
+    title: "Web Developer",
+    company: "Banco Promerica",
+    date: "05/2026 - Present",
+    points: [
+      <>
+        Designed and developed responsive web interfaces using{" "}
+        <span className="font-medium text-accent">Tailwind, Astro and React</span>
+        , combining content-driven architecture with dynamic client-side interactivity to deliver{" "}
+        <span className="font-medium text-accent">scalable, high-performance web experiences</span>.
+      </>,
+      <>
+        Led the implementation of a{" "}
+        <span className="font-medium text-accent">unified corporate design system</span>{" "}
+        by integrating the company&apos;s branding standards across multiple web properties, establishing consistency in user experience and visual identity where no standardized framework previously existed.
+      </>,
+      <>
+        Maintained and enhanced{" "}
+        <span className="font-medium text-accent">technical SEO standards</span>{" "}
+        through performance optimization, semantic HTML, metadata management, and{" "}
+        <span className="font-medium text-accent">accessibility best practices</span>
+        , improving search engine visibility and overall site quality.
+      </>,
+    ],
+    technologies: [
+      { name: "React", icon: icons.React },
+      { name: "Astro", icon: icons.Astro },
+      { name: "Tailwind", icon: icons.Tailwind },
+      { name: "JavaScript", icon: icons.JavaScript },
+      { name: "SEO", icon: icons.SEO },
+      { name: "HTML", icon: icons.HTML },
+    ],
+  },
+  {
     id: "individual-consulting-front-end-developer",
     title: "Front-End Developer",
     company: "Individual Consulting",
-    date: "02/2026 - Present",
+    date: "02/2026 - 04/2026",
     points: [
       <>
         Responsible for{" "}
